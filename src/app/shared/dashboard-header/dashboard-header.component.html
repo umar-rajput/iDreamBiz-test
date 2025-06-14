@@ -1,0 +1,17 @@
+<div class="flex items-center justify-between flex-wrap gap-4 b-6">
+    <h1 class="text-xl font-semibold text-gray-900">My Dashboard</h1>
+
+    <div class="flex items-center flex-wrap gap-4">
+        <div class="flex items-center flex-wrap gap-4">
+            <app-button label="Today" [active]="activeButton === 'Today'" (click)="setActive('Today')"></app-button>
+            <app-button label="Week" [active]="activeButton === 'Week'" (click)="setActive('Week')"></app-button>
+            <app-button label="Month" [active]="activeButton === 'Month'" (click)="setActive('Month')"></app-button>
+        </div>
+
+        <div class="relative">
+            <input type="date" placeholder="Select Date"
+                class="px-4 py-1.5 rounded-lg border border-gray-300 text-sm text-gray-700 placeholder-gray-500 focus:outline-none" 
+            />
+        </div>
+    </div>
+</div>
